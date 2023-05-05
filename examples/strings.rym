@@ -1,0 +1,11 @@
+use std.{Arena, String}
+
+func main() {
+	let mut arena = Arena.with_capacity(256);
+	let string1 = String.alloc(&arena, 20);
+	let string2 = String.alloc(&arena, 20);
+	let string3 = String.alloc(&arena, 20);
+	Arena.alloc(&arena, 100);
+	print_bytes(arena.memory, arena.capacity);
+	print(f"~{}~ ~{}~ ~{}~", string1, string2, string3);
+}

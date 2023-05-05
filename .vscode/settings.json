@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"lib.h": "c",
+		"arena.h": "c",
+		"alias.h": "c",
+		"string.h": "c"
+	}
+}
